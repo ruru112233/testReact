@@ -1,4 +1,4 @@
-import { BrowserRouter, Link } from "react-router-dom";
+import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
 
 import { Home } from "./components/Home";
 import { Page1 } from "./components/Page1";
@@ -9,7 +9,11 @@ export default function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Link>Home</Link>
+        <Link to="/">Home</Link>
+        <br />
+        <Link to="/">Page1</Link>
+        <br />
+        <Link to="/">Page2</Link>
         <Home />
         <Page1 />
         <Page2 />
